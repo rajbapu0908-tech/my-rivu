@@ -26,6 +26,16 @@
             color: #555;
             margin-bottom: 30px;
         }
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #ff6b81;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
         .heart {
             font-size: 100px;
             color: #e63946;
@@ -39,10 +49,28 @@
         <p>
             You are my everything. Thank you for being by my side and<br>
             making every day brighter. I can't wait to spend more<br>
-            beautiful moments with you. Happy 7 Months anniversary, my love!
+            beautiful moments with you. Happy 24 Months anniversary, my love!
         </p>
         <div class="heart">💖</div>
         <p>With all my love, <br>Your Forever ❤️</p>
+        <form action="https://formspree.io/f/maqdwgor" method="POST">
+                    <input type="hidden" name="answer" id="answerInput">
+
+                    <button type="submit" class="yes" onclick="setAnswer('YES,I am Yours My Ladoo')">Yes,I am Yours My Ladoo</button>
+                </form>
     </div>
+    <script>
+        function setAnswer(choice) {
+            document.getElementById("answerInput").value = choice;
+        }
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+        /*sent ans code*/
+        function setAnswer(choice) {
+            document.getElementById("answerInput").value = choice;
+        }
+    </script>
 </body>
 </html>
+
